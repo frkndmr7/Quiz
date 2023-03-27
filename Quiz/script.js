@@ -1,11 +1,7 @@
 const test = new Test(sorular);
 const ui = new UI();
 
-// document.querySelector(".btn_start").addEventListener("click", function(){
-    
-//     // document.querySelector(".title").classList.add("pasive");
-//     this.classList.add("hidden");
-// });
+
 
 
 ui.btn_start.addEventListener("click", function() {
@@ -18,9 +14,8 @@ ui.btn_start.addEventListener("click", function() {
 });
 
 ui.ready.addEventListener("click", function(){
-  //  resetCountdown();  
-   startCountdown(20);
-
+    
+    startCountdown(20);
 
     document.querySelector(".info_box").classList.remove("active");
     document.querySelector(".sayilar").classList.remove("pasive");
@@ -85,7 +80,6 @@ document.querySelector(".restart").addEventListener("click", function(){
   document.querySelector(".timer-div").classList.add("active");
   document.querySelector(".btn_next").classList.add("active");
   clearInterval(timer);
-  // resetCountdown();
   startCountdown(15); 
   test.soruIndex=0;
   document.querySelector(".number-of-question").innerHTML= test.soruIndex +1 +` of 10 question`;
@@ -120,18 +114,11 @@ function optionSelected(option) {
       ui.option_list.children[i].classList.add("disabled");
   }
 
-  // ui.btn_next.classList.add("show");
+  
 }
 
-// document.querySelector(".btn_next button").addEventListener("click", function () {
-//     resetCountdown();
-//     startCountdown();
-//   });
-  
 
-
-  
-let timer;
+ let timer;
 
 function startCountdown(timeLeft) {
   clearInterval(timer);
