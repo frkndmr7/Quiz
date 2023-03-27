@@ -15,7 +15,7 @@ function UI(){
     this.time_text = document.querySelector(".time-text")
 }
 
-{/* <b>${cevap}</b>: */}
+
 UI.prototype.soruGoster = function(soru) {               
     let question = `<span>${soru.soruMetni}</span>`;     
     let image = `<img src ="img/${soru.soruFoto}">`;
