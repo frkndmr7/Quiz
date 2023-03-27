@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div class="krono">
+        <button class = "start" >Başlat</button>
+        <button class = "stop" >Durdur</button>
+        <button class = "restart" >Sıfırla</button>
+        <p> 00:00:00 </p> 
+    </div> -->
+
+    <div class="btn_start">
+        <button class="btn btn-lg">Start IQ Test</button> 
+    </div>
+    <div class="info_box">
+        <div class="info_title">Bilgilendirme</div>
+        <hr>
+        <div class="info_list">
+           <p class="info">1. Testimizde 10 Soru bulunmaktadır.</p>
+           <p class="info">2. Her sorunun süresi 20 saniyedir</p>
+           <p class="info">3. İşaretlemeden soruyu atlamayınız. Aksi takdirde yanlış sayılacaktır.</p>
+        </div>
+        <hr>
+        <div class="buttons1">
+            <button class="quit1">Quit Quiz</button>
+            <button class="ready">Continue</button>
+        </div>
+    </div>
+
+
+    <div class="test-box">
+        <div class="sayilar">
+            <div class="number-of-count">
+                <span class="number-of-question"></span></div>
+            <div class="timer-div" >
+                <span class="time-text">Timer:</span>
+                <span class="time-left">20</span> 
+            </div>
+        </div>
+
+        <header class="page-header">
+            <div class="title">Are you ready to find out your iq?</div>
+        </header>
+        <section class="page_body">
+            <div class="question_text">
+                <!-- <span>1. Aşağıdaki harflerden 8 harfli anlamlı bir kelime oluşturduğunuzda, bu kelime aslında ne olmuş olur?</span> -->
+            </div>
+            <div class="image">
+                <!-- <img src="img/1.jpg" style="width: 400px; height: 200px;" alt=""> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Kuş</span>
+                </div>
+                <div class="option">
+                    <span></span>Şehir</div>
+                <div class="option">
+                    <span>Meyve</span>
+                </div>
+                <div class="option">
+                    <span>Sebze</span>
+                </div> -->
+                
+            </div>
+        </section>
+        <footer class="page-footer">
+            <button class="btn_next btn btn-warning">Next</button>
+            <button class="btn_finish btn btn-warning  ">Finish</button> 
+
+        </footer>
+
+    </div>
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You have complete the quiz</div>
+        <div class="score_text">
+            <span>And sorry , You got only <p>1</p> of <p>10</p></span>
+        </div>
+        <div class="buttons2">
+            <button class="restart">Restart</button>
+            <button class="quit2">Quit</button>
+        </div>
+    </div>
+
+        
+    </div>
+
+    <script src="soru.js"></script>
+    <script src="test.js"></script>
+    <script src="ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
